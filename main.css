@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    --green: green;
+    --yellow: yellow;
+    --red: red;
+    --black: black;
+    --purple: purple;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url('/bg-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container1{
+    padding-top: 5rem;
+    /* text-align: right; */
+    margin: auto;
+    width: 40%;
+}
+
+.heading{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.container1 .slogan{
+    font-size: 4rem;
+    padding: 0 8rem;
+    font-family: 'Cookie', cursive;
+
+}
+
+.aphostrope{
+    font-size: 4rem;
+    color: #555;
+}
+
+.al{
+    margin-left: 4rem;
+}
+
+.container1 .ar{
+    text-align: right;
+    display: block;
+    margin-right: 15rem;
+}
+
+.dev-info{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    color: #333;
+    font-family: 'Cookie', cursive;
+    font-family: 'Berkshire Swash', cursive;
+
+}
+
+.container{
+    padding-top: 5rem;
+    width: 60%;
+    margin-bottom: 5rem;
+}
+
+.container #new-task-form{
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    box-shadow: 5px 5px 10px #aaa;
+    margin-right: 2rem;
+}
+
+.uncompleted input:focus,
+.container #new-task-form #new-task:focus{
+    outline: 1px solid rgb(86, 159, 249);
+    border-color: rgb(86, 159, 249);
+}
+
+.tasks input{
+    width: 75%;
+    height: 3rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: unset;
+    outline: none;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.container #new-task-form #new-task{
+    width: 70%;
+    margin-right: 2rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.container #new-task-form #add-task-btn{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, rgb(217, 229, 239), rgb(86, 159, 249));
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+.container #new-task-form #add-task-btn:hover{
+    background: linear-gradient(225deg, rgb(217, 229, 239), rgb(86, 159, 249));
+}
+
+.container .msg{
+    display: inline-block;
+    color: var(--green);
+    font-size: 1.7rem;
+    margin: 1rem 8rem;
+}
+
+.container .tasks{
+    width: 95%;
+    margin: auto;
+    margin-top: 3rem;
+    display: none;
+    /* background-color: white; */
+}
+
+.container .uncompleted-tasks h1{
+    color: var(--red);
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+.container .completed-tasks h1{
+    color: var(--green);
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.container .tasks .task-list{
+    width: 95%;
+    /* margin: auto; */
+}
+
+.task{
+    padding: 1rem;
+    font-size: 2rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 3px 3px 5px #555;
+
+}
+
+.task .btn::before{
+    font-size: 2.5rem;
+    /* margin-right: 2rem; */
+}
+
+.task .done{
+    /* margin-right: 1rem; */
+    margin-left: 2.5rem;
+    color: var(--green);
+}
+
+.task .save{
+    background: linear-gradient(45deg, rgb(217, 229, 239), rgb(86, 159, 249));
+    border: 1px solid #555;
+}
+
+.task .edit{
+    color: rgb(86, 159, 249);
+}
+
+.task .remove{
+    margin-left: 5rem;
+    color: var(--red);
+}
+
+.sr-no{
+    text-align: center;
+    margin: auto 0.5rem;
+    font-weight: 700;
+}
+
+.buttons{
+    margin: auto;
+}
+
+.container .tasks .task-list .task-text{
+    /* outline: none; */
+    border: none;
+    
+}
+
+@media (max-width: 1250px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 1180px){
+    html{
+        font-size: 54%;
+    }
+}
+
+@media (max-width: 1080px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 980px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 880px){
+    html{
+        font-size: 45%;
+    }
+
+    body{
+        background-image: url('/bg-img2.jpg');
+    }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container1{
+        width: 50%;
+        margin-bottom: 20rem;
+        margin-top: 20rem;
+    }
+
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 780px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 680px){
+    html{
+        font-size: 40%;
+    }
+
+    .container1{
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: 35%;
+    }
+}
+
+
+@media (max-width: 420px){
+    html{
+        font-size: 30%;
+    }
+}
+
+@media (max-width: 375px){
+    html{
+        font-size: 25%;
+    }
+}
